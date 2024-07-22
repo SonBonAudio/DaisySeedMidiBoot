@@ -154,6 +154,11 @@ int main(void)
 
   SDRAM_Initialization_Sequence(&hsdram1);   
   MPU_Config();
+
+//    led_on();
+      HAL_GPIO_WritePin(USER_LED_GPIO_Port, USER_LED_Pin, USER_LED_INVERTED ? GPIO_PIN_RESET : GPIO_PIN_SET);
+
+
   if (qspi_init(QSPI_MODE_MEMORY_MAPPED) != MEMORY_OK){
     // We can end here only if QSPI settings are misconfigured
     error(RUNTIME_ERROR, "Flash init error");
