@@ -1,3 +1,5 @@
+Sorry, it's Defunct as of Sept. 20th, 2024
+
 # OpenWare
 MIDI-based bootloader firmware for Daisy Seed (uses the STM32H750IB MCU)
 
